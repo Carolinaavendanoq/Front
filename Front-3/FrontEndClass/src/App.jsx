@@ -3,6 +3,10 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import HelloName from './components/HelloName'
 import OnlyHi from './components/OnlyHi'
+import Counter from './components/Counter'
+import Switcher from './components/Switcher'
+import Event from './components/Event'
+import Form from './components/Form'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +27,16 @@ function App() {
           <OnlyHi name = 'Caro'></OnlyHi>
           <OnlyHi name = 'Cami'></OnlyHi>
       </HelloName>
+      <hr />
+      <h2>Clase 7</h2>
+      <Counter />
+      <Switcher />
+      <hr />
+      <h2>Clase 8</h2>
+      <Event />
+      <Event number="2"/>
+      <Event number="3"/>
+      <Form />
     </div>
   )
 }
