@@ -9,14 +9,12 @@ const List = () =>{
         setItems([...items, `Artículo No. ${count} añadido a la lista`]);
     }
 
-    console.log(count);
-
     return(
         <>
             <h2>List items</h2>
             <ul>
-                {items.map((item) =>(
-                    <li key={item}>{item}</li>
+                {items.map((item, count) =>(
+                    <li key={count}>{item}</li>
                 ))}
             </ul>
             <button onClick={addItems}>Add Items</button>
