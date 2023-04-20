@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Form from './components/Form'
+import Rejuvenecedor from './components/Rejuvenecedor'
 import './App.css'
 
 function App() {
@@ -83,6 +85,8 @@ function App() {
         {/* Mediante el type nos aseguramos que se dispare el evento onSubmit al hacer click en el botón */}
         <button type='submit'>Enviar</button>
       </form>
+      <hr />
+      <Rejuvenecedor/>
     </div>
   )
 }
